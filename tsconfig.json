@@ -1,0 +1,35 @@
+{
+  "include": ["./src", "./eslint.config.js"],
+  "exclude": [],
+  "compilerOptions": {
+    // type checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "strict": true,
+
+    // modules
+    "module": "node16",
+    "moduleResolution": "node16",
+    "rootDir": "./src",
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node"],
+
+    // emit
+    "outDir": "./dist",
+
+    // interop constraints
+    "verbatimModuleSyntax": true,
+
+    // language and environment
+    "lib": ["es2023"],
+    "moduleDetection": "force",
+    "target": "es2022",
+
+    // completeness
+    "skipLibCheck": true
+  }
+}

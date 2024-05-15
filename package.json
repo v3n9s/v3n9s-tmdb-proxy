@@ -1,5 +1,14 @@
 {
   "name": "paralect-tmdb-proxy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "dev": "npm run clean && tsc --watch --preserveWatchOutput",
+    "build": "npm run clean && tsc",
+    "start": "node ./dist/main.js",
+    "lint": "eslint ."
+  },
   "dependencies": {
     "@types/eslint": "^8.56.10",
     "@types/node": "^20.12.12",
